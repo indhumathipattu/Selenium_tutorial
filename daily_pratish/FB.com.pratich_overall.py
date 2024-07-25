@@ -1,0 +1,40 @@
+import time
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
+
+opt=Options()
+opt.add_experimental_option("detach",True)
+driver = webdriver.Chrome(options=opt)
+driver.get("https://fB.com")
+driver.maximize_window()
+driver.implicitly_wait(30)
+driver.find_element(By.NAME,"email").send_keys("mathindu1234@gmail.com")
+driver.find_element(By.LINK_TEXT,"Create new account").click()
+driver.find_element(By.NAME,"reg_email__").send_keys("mathiindu1234@gmail.com")
+driver.find_element(By.NAME,"reg_email_confirmation__").send_keys("mathiindu1234@gmail.com")
+driver.find_element(By.ID,"password_step_input").send_keys("mathi1@123")
+driver.find_element(By.NAME,"firstname").send_keys("indhumathi")
+driver.find_element(By.NAME,"lastname").send_keys("indhumathi")
+day1=driver.find_element(By.ID,"day")
+time.sleep(5)
+sel=Select(day1)
+sel.select_by_value("4")
+time.sleep(5)
+#sel.select_by_visible_text("Date of birth")
+#time.sleep(5)
+sel.select_by_index(3)
+mm2_sus=driver.find_element(By.NAME,"birthday_month")
+sel2=Select(mm2_sus)
+sel2.select_by_value("2")
+time.sleep(50)
+sel2.select_by_visible_text("Feb")
+time.sleep(5)
+sel2.select_by_index(3)
+year1=driver.find_element(By.ID,"year")
+SEL3=Select(year1)
+SEL3.select_by_value("2018")
+driver.find_element(By.NAME,"sex").click()
+driver.find_element(By.XPATH,"/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[11]/button[1]").click()

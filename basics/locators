@@ -1,0 +1,14 @@
+What is locator?
+
+to identify the web element.
+
+8 locator:
+
+1) ID
+2) NAME
+3) CLASSNAME
+4) TAGNAME  ---- a tag la sart paniruntha tag name
+5) LINKTEXT
+6) PARTIALLINKTEXT
+7) XPATH
+8) CSS SELECTOR

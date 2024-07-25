@@ -1,0 +1,73 @@
+What is xpath?
+
+one of the locator.
+
+two types of xpath
+
+1) relative xpath
+
+    i) Single attribute
+
+    ii) Multiple attribute
+
+    iii) text() function
+
+    iv) contains() function
+      
+     v)contains attribute function
+
+    vi) starts-with() function
+
+    vi) starts-with attribute function
+
+    vi) normalize-space() function
+
+
+Single attribute:
+==================
+
+//tagname[@attribute='value']
+
+
+Multiple attribute:
+==================
+
+//tagname[@attribute='value'][@attribute='value']
+
+
+text() function:
+====================
+
+//tagname[text()='value']
+
+
+contains text() function
+=========================
+
+//tagname[contains(text(),'partial value')]
+
+
+contains attribute function
+=========================
+
+//tagname[contains(@attribute,'partial value')]
+
+
+starts-with- text() function
+=======================
+
+//tagname[starts-with(text(),'starting value')]
+
+
+
+starts-with attribute function
+=======================
+
+//tagname[starts-with(@attribute,'starting value')]
+
+
+normalize space function
+=======================
+//tagname[normalize-space(text()='value')]
+
+2) absolute xpath
