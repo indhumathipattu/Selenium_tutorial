@@ -6,6 +6,8 @@ def m2():
 
 def m3():
   print('java')
+def m4():
+  print('java')
 
 
 
