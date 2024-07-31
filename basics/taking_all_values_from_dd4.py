@@ -3,3 +3,9 @@ def m1():
 def m2():
   print('java')
 
+
+def m3():
+  print('java')
+
+
+
